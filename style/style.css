@@ -1,0 +1,110 @@
+.stats {
+  position: fixed; }
+  .stats .statinfo {
+    float: left;
+    background: black;
+    position: fixed;
+    color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    left: 50px; }
+    .stats .statinfo ul {
+      list-style-type: none; }
+  .stats .health {
+    margin-right: 5px;
+    margin-top: 20px; }
+  .stats .weapon {
+    margin-right: 5px;
+    margin-top: 20px; }
+  .stats .level {
+    margin-right: 5px;
+    margin-top: 20px; }
+  .stats .nextlevel {
+    margin-right: 5px;
+    margin-top: 20px; }
+  .stats .dungeon {
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.grid {
+  line-height: 0;
+  margin: auto;
+  box-shadow: 0px 0px 20px white;
+  padding-top: 30px;
+  margin-left: 300px;
+  animation: fadein 1s; }
+  .grid .cell {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px;
+    margin-bottom: -1px;
+    margin-left: -1px; }
+  .grid .pos {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px;
+    margin-bottom: -1px;
+    margin-left: -1px; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.grid1 {
+  line-height: 0;
+  margin: auto;
+  box-shadow: 0px 0px 20px white;
+  padding-top: 30px;
+  margin-left: 300px;
+  animation: fadeout 1s; }
+  .grid1 .cell {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px;
+    margin-bottom: -1px;
+    margin-left: -1px; }
+  .grid1 .pos {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px;
+    margin-bottom: -1px;
+    margin-left: -1px; }
+
+@keyframes fadeout {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.error {
+  z-index: 2;
+  background: red;
+  width: 980px;
+  text-align: center;
+  position: relative;
+  left: 300px;
+  bottom: 500px;
+  color: white;
+  font-size: 2em;
+  animation: fadein 1s; }
+
+.win {
+  z-index: 2;
+  background: green;
+  width: 980px;
+  text-align: center;
+  position: relative;
+  left: 300px;
+  bottom: 500px;
+  color: white;
+  font-size: 2em;
+  animation: fadein 1s; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,126 @@
+.stats{
+    position: fixed;
+    .statinfo{
+        float: left;
+        background: black;
+        position: fixed;
+        color: white;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 30px;
+        left: 50px;
+        ul{
+            list-style-type: none;
+        }
+    }
+    .health{
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .weapon{
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .level{
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .nextlevel{
+        margin-right: 5px;
+        margin-top: 20px;
+    }
+    .dungeon{
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+.grid{
+    line-height: 0;
+    margin: auto;
+    box-shadow: 0px 0px 20px white;
+    padding-top: 30px;
+    margin-left: 300px;
+    animation: fadein 1s;
+    .cell{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: 1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+    .pos{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: 1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.grid1{
+    line-height: 0;
+    margin: auto;
+    box-shadow: 0px 0px 20px white;
+    padding-top: 30px;
+    margin-left: 300px;
+    animation: fadeout 1s;
+    .cell{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: 1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+    .pos{
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: 1px;
+        margin-bottom: -1px;
+        margin-left: -1px;
+    }
+}
+@keyframes fadeout{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.error{
+    z-index: 2;
+    background: red;
+    width: 980px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    bottom: 500px;
+    color: white;
+    font-size: 2em;
+    animation: fadein 1s;
+}
+.win{
+    z-index: 2;
+    background: green;
+    width: 980px;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    bottom: 500px;
+    color: white;
+    font-size: 2em;
+    animation: fadein 1s;  
+}
